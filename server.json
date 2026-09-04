@@ -1,0 +1,65 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/server.json",
+  "name": "io.github.infotik/orano-mcp-server",
+  "displayName": "ORANO",
+  "description": "Personal, read-only MCP server that exposes the user's ORANO library (projects, tasks, research, roadmaps, memory facts) as tools for their own AI agent.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/infotik/orano-mcp-server"
+  },
+  "homepage": "https://oranoai.com/mcp",
+  "categories": [
+    "knowledge-management",
+    "personal-assistant",
+    "productivity",
+    "second-brain"
+  ],
+  "tools": [
+    {
+      "name": "list_projects",
+      "description": "List the user's ORANO projects with optional status filters (active, completed, skipped, archived)."
+    },
+    {
+      "name": "get_project",
+      "description": "Return a single project's full structured understanding including summary, key points, ordered tasks, resources, research, and learning roadmap."
+    },
+    {
+      "name": "get_project_context",
+      "description": "Return only the requested context fields (summary, overview, caption, transcript, visual_context, links, tasks, roadmap, source, raw_source) in structured, Markdown, or text output."
+    },
+    {
+      "name": "search_library",
+      "description": "Search the user's projects by title, summary, source title, or URL."
+    },
+    {
+      "name": "read_memory_facts",
+      "description": "Return curated memory facts with confidence and freshness signals, optionally filtered by kind."
+    },
+    {
+      "name": "get_pending_handoffs",
+      "description": "Retrieve acknowledged-once projects explicitly sent from the ORANO app to a target agent."
+    }
+  ],
+  "transports": [
+    {
+      "type": "http",
+      "endpoint": "https://api.oranoai.com/mcp/"
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "scope": "orano:read",
+    "user_specific": true,
+    "rate_limit": "240 calls / 60 minutes / user",
+    "max_keys_per_user": 10
+  },
+  "metadata": {
+    "publisher": "Infotik",
+    "founder": "Manu Parasuraman",
+    "platform": "iOS App Store (com.oranoai.app)",
+    "support_email": "hello@oranoai.com",
+    "license": "MIT",
+    "status": "Live on iOS App Store, pre-revenue"
+  }
+}

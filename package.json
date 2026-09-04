@@ -1,0 +1,35 @@
+{
+  "name": "@infotik/orano-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server manifest for ORANO — personal, read-only MCP endpoint that exposes a user's ORANO library to their own AI agent.",
+  "type": "module",
+  "main": "server.json",
+  "files": [
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "agent",
+    "productivity",
+    "second-brain",
+    "pkm",
+    "knowledge-management"
+  ],
+  "author": "Manu Parasuraman <hello@oranoai.com>",
+  "license": "MIT",
+  "homepage": "https://oranoai.com/mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infotik/orano-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/infotik/orano-mcp-server/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
