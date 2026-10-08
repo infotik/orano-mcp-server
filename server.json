@@ -44,7 +44,7 @@
   "transports": [
     {
       "type": "http",
-      "endpoint": "https://api.oranoai.com/mcp/"
+      "endpoint": "https://orano-ai-backend-1037939693300.us-central1.run.app/mcp/"
     }
   ],
   "authentication": {

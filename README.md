@@ -72,7 +72,7 @@ schema](https://modelcontextprotocol.io/docs/concepts/architecture#server-discov
     { "name": "get_pending_handoffs", "description": "Retrieve acknowledged-once projects explicitly sent from the ORANO app to a target agent." }
   ],
   "transports": [
-    { "type": "http", "endpoint": "https://api.oranoai.com/mcp/" }
+    { "type": "http", "endpoint": "https://orano-ai-backend-1037939693300.us-central1.run.app/mcp/" }
   ],
   "authentication": {
     "type": "bearer",
@@ -95,7 +95,7 @@ from mcp.server.auth.provider import AccessToken
 
 mcp = FastMCP(
     name="orano",
-    auth=AuthSettings(issuer_url="https://api.oranoai.com", required_scopes=["orano:read"]),
+    auth=AuthSettings(issuer_url="https://orano-ai-backend-1037939693300.us-central1.run.app", required_scopes=["orano:read"]),
 )
 
 @mcp.tool()
