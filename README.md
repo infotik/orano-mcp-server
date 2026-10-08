@@ -149,3 +149,10 @@ MIT — see [LICENSE](./LICENSE).
 - [MCP access flow](https://oranoai.com/mcp-access.html)
 - [App Store listing](https://apps.apple.com/us/app/orano-ai/id6791454509)
 - [Deck](https://oranoai.com/deck/)
+
+## Setup guides
+
+- [Claude Code](https://oranoai.com/blog/connect-orano-claude-code-mcp.html): one `claude mcp add --transport http` command, or a `.mcp.json` with an env-var key
+- [Cursor](https://oranoai.com/blog/connect-orano-cursor-mcp.html): `mcp.json` with `url` + `Authorization: Bearer ${env:ORANO_MCP_KEY}`
+- [Three ways to use saved videos in ChatGPT, Claude or Cursor](https://oranoai.com/blog/give-chatgpt-claude-your-saved-videos.html)
+- Machine-readable connection details: https://oranoai.com/mcp.json
