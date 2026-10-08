@@ -2,7 +2,7 @@
 
 This is a minimal but functional MCP server that exposes the six ORANO
 read-only tools to any compatible AI agent. The production server runs
-at https://api.oranoai.com/mcp/ as part of the ORANO FastAPI backend;
+at https://orano-ai-backend-1037939693300.us-central1.run.app/mcp/ as part of the ORANO FastAPI backend;
 this reference exists so the Glama.ai runner (and any other Docker-based
 MCP playground) can spin up a working server for testing/listing.
 

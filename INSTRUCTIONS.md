@@ -89,7 +89,7 @@ release.
 
 The `server.json` manifest in this repo is sufficient for MCPFind, Glama,
 and MCP servers indexing. The production server still runs at
-`https://api.oranoai.com/mcp/` for end users with personal API keys. A full
+`https://orano-ai-backend-1037939693300.us-central1.run.app/mcp/` for end users with personal API keys. A full
 open-source extraction of the production server is on the product roadmap
 but is out of scope for the initial launch.
 
